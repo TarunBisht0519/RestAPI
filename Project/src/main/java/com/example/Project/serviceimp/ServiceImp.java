@@ -61,5 +61,9 @@ public class ServiceImp implements EmployeeService
 			System.out.println("EMPLOYEE WITH MENTIONED ID NOT FOUND");
 		}
 	}
+	@Override
+	public List<Employee> printbyname(String firstname) {
+		return repository.getbyfirstname(firstname);
+	}
 
 }

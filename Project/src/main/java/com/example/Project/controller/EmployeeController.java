@@ -44,6 +44,12 @@ public class EmployeeController
 	{
 		service.update(id,e);
 	}
+	@GetMapping("/informationname/{firstname}")
+	public List<Employee> infobyname(@PathVariable String firstname)
+	{
+		firstname=firstname.toUpperCase();
+		return service.printbyname(firstname);
+	}
 	
 	
 }

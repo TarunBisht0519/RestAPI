@@ -12,5 +12,6 @@ public interface EmployeeService
 	public Optional<Employee>find(Long e);
 	public void delete(Long id);
 	public void update(Long id, Employee e);
+	public List<Employee> printbyname(String firstname);
 
 }
